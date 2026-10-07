@@ -1,0 +1,1904 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0708.1337                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='05af0cbb604b1ca1312ce47f815a5bbf9dfa3c573642130a90ebb6e8b382264e' _.fcp.WorkbookFingerprinting.true...creator-author-id='05af0cbb604b1ca1312ce47f815a5bbf9dfa3c573642130a90ebb6e8b382264e' _.fcp.WorkbookFingerprinting.true...creator-license-type='free' _.fcp.WorkbookFingerprinting.true...creator-machine-id='31bb3807bb697dd681d913538cbded13aad1ad8461a6b6a2b8b35b86d952dc83' _.fcp.WorkbookFingerprinting.true...license-type='free' _.fcp.WorkbookFingerprinting.true...machine-id='31bb3807bb697dd681d913538cbded13aad1ad8461a6b6a2b8b35b86d952dc83' original-version='18.1' source-build='2026.2.1 (20262.26.0708.1337)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <PatternedLineMarks />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='netflix_titles' inline='true' name='federated.1r5gfhp1ytv5c21bu7eph14gtn0p' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='netflix_titles' name='textscan.1vdeq2o0wisqgs1b3dmf00ki2s5a'>
+            <connection class='textscan' directory='C:/Users/PC/Desktop/ITP project/Tableau Project/Final Netflix Title project' filename='netflix_titles.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1vdeq2o0wisqgs1b3dmf00ki2s5a' name='netflix_titles.csv' table='[netflix_titles#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Show_ID' ordinal='0' />
+            <column datatype='string' name='Type' ordinal='1' />
+            <column datatype='string' name='Title' ordinal='2' />
+            <column datatype='string' name='director' ordinal='3' />
+            <column datatype='string' name='Cast' ordinal='4' />
+            <column datatype='string' name='Country' ordinal='5' />
+            <column datatype='date' name='Date_added' ordinal='6' />
+            <column datatype='integer' name='Release_year' ordinal='7' />
+            <column datatype='string' name='Rating' ordinal='8' />
+            <column datatype='string' name='Duration' ordinal='9' />
+            <column datatype='string' name='Listed_in' ordinal='10' />
+            <column datatype='string' name='Description' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Show_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Show_ID]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>Show_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[netflix_titles.csv_D24E4CA21BE2449B97AC9297DD532DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>Type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[netflix_titles.csv_D24E4CA21BE2449B97AC9297DD532DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Title]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>Title</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[netflix_titles.csv_D24E4CA21BE2449B97AC9297DD532DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>director</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[director]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>director</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[netflix_titles.csv_D24E4CA21BE2449B97AC9297DD532DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cast</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Cast]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>Cast</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[netflix_titles.csv_D24E4CA21BE2449B97AC9297DD532DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[netflix_titles.csv_D24E4CA21BE2449B97AC9297DD532DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date_added</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date_added]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>Date_added</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[netflix_titles.csv_D24E4CA21BE2449B97AC9297DD532DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Release_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Release_year]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>Release_year</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[netflix_titles.csv_D24E4CA21BE2449B97AC9297DD532DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Rating]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>Rating</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[netflix_titles.csv_D24E4CA21BE2449B97AC9297DD532DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Duration</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Duration]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>Duration</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[netflix_titles.csv_D24E4CA21BE2449B97AC9297DD532DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Listed_in</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Listed_in]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>Listed_in</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[netflix_titles.csv_D24E4CA21BE2449B97AC9297DD532DB6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[netflix_titles.csv_D24E4CA21BE2449B97AC9297DD532DB6]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Date' datatype='date' name='[Calculation_1304069851103232]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATE([Date_added])' />
+      </column>
+      <column caption='Added Year' datatype='integer' name='[Calculation_1304069851299841]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='YEAR([Date_added])' />
+      </column>
+      <column caption='Added Month' datatype='datetime' name='[Calculation_1304069851439106]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATETRUNC(&apos;month&apos;,[Date_added])' />
+      </column>
+      <column caption='Movie Duration Minutes' datatype='integer' name='[Calculation_1304069851635715]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Type] = &quot;Movie&quot;&#13;&#10;THEN&#13;&#10;    INT(REPLACE([Duration],&quot; min&quot;,&quot;&quot;))&#13;&#10;END' />
+      </column>
+      <column caption='Average Movie Duration' datatype='real' name='[Calculation_1304069851738116]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Calculation_1304069851635715])' />
+      </column>
+      <column caption='TV Seasons' datatype='integer' name='[Calculation_1304069851815941]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Type] = &quot;TV Show&quot;&#13;&#10;THEN&#13;&#10;    INT(&#13;&#10;        REPLACE(&#13;&#10;            REPLACE([Duration],&quot; Seasons&quot;,&quot;&quot;),&#13;&#10;            &quot; Season&quot;,&quot;&quot;&#13;&#10;        )&#13;&#10;    )&#13;&#10;END' />
+      </column>
+      <column caption='Average TV Seasons' datatype='real' name='[Calculation_1304069851897862]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Calculation_1304069851815941])' />
+      </column>
+      <column caption='Total Titles' datatype='integer' name='[Calculation_3080039285084160]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Show_ID])' />
+      </column>
+      <column caption='Total Movies' datatype='integer' name='[Calculation_3080039290695682]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(&#13;&#10;    IF [Type] = &quot;Movie&quot;&#13;&#10;    THEN [Show_ID]&#13;&#10;    END&#13;&#10;)' />
+      </column>
+      <column caption='Total TV Shows ' datatype='integer' name='[Calculation_3080039297306627]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(&#13;&#10;    IF [Type] = &quot;TV Show&quot;&#13;&#10;    THEN [Show_ID]&#13;&#10;    END&#13;&#10;)' />
+      </column>
+      <column caption='Movie %' datatype='real' default-format='p0.00%' name='[Calculation_3080039298531333]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_3080039290695682] / [Calculation_3080039285084160]' />
+      </column>
+      <column caption='TV Show %' datatype='real' default-format='p0.00%' name='[Calculation_3080039299915782]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_3080039297306627] / [Calculation_3080039285084160]' />
+      </column>
+      <column caption='Peak Year' datatype='string' name='[Calculation_3080039311380491]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF COUNTD([Show_ID]) =&#13;&#10;WINDOW_MAX(COUNTD([Show_ID]))&#13;&#10;THEN &quot;Peak Year&quot;&#13;&#10;ELSE &quot;Other&quot;&#13;&#10;END'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Total Show Id ' datatype='integer' name='[Calculation_3080039320260625]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Show_ID])' />
+      </column>
+      <column caption='Content Mix --Percentage of Total' datatype='real' name='[Calculation_3080039321100306]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Show_ID]) / TOTAL(COUNTD([Show_ID]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Titles Added' datatype='integer' name='[Calculation_3080039366455321]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Show_ID])' />
+      </column>
+      <column caption='Titles Released' datatype='integer' name='[Calculation_3080039366557722]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(&#13;&#10;    IF NOT ISNULL([Release_year])&#13;&#10;    THEN [Show_ID]&#13;&#10;    END&#13;&#10;)' />
+      </column>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Date added' datatype='date' name='[Date_added]' role='dimension' type='ordinal' />
+      <column caption='Listed in' datatype='string' name='[Listed_in]' role='dimension' type='nominal' />
+      <column caption='Release year' datatype='integer' name='[Release_year]' role='dimension' type='quantitative' />
+      <column caption='Show ID' datatype='string' name='[Show_ID]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+      <column caption='netflix_titles.csv' datatype='table' name='[__tableau_internal_object_id__].[netflix_titles.csv_D24E4CA21BE2449B97AC9297DD532DB6]' role='measure' type='quantitative' />
+      <column caption='Director' datatype='string' name='[director]' role='dimension' type='nominal' />
+      <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Date_added]' derivation='Year-Trunc' name='[tyr:Date_added:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Calculation_3080039311380491]' derivation='User' name='[usr:Calculation_3080039311380491:nk:1]' pivot='key' type='nominal'>
+        <table-calc ordering-field='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[yr:Date_added:ok]' ordering-type='Field' />
+      </column-instance>
+      <column-instance column='[Date_added]' derivation='Year' name='[yr:Date_added:ok]' pivot='key' type='ordinal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Movie&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;TV Show&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[usr:Calculation_3080039311380491:nk:1]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Peak Year&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[tyr:Date_added:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>#2015-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>#2019-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>#2018-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>#2021-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>#2017-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>#2020-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2016-01-01 00:00:00#</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='netflix_titles.csv' id='netflix_titles.csv_D24E4CA21BE2449B97AC9297DD532DB6'>
+            <properties context=''>
+              <relation connection='textscan.1vdeq2o0wisqgs1b3dmf00ki2s5a' name='netflix_titles.csv' table='[netflix_titles#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Show_ID' ordinal='0' />
+                  <column datatype='string' name='Type' ordinal='1' />
+                  <column datatype='string' name='Title' ordinal='2' />
+                  <column datatype='string' name='director' ordinal='3' />
+                  <column datatype='string' name='Cast' ordinal='4' />
+                  <column datatype='string' name='Country' ordinal='5' />
+                  <column datatype='date' name='Date_added' ordinal='6' />
+                  <column datatype='integer' name='Release_year' ordinal='7' />
+                  <column datatype='string' name='Rating' ordinal='8' />
+                  <column datatype='string' name='Duration' ordinal='9' />
+                  <column datatype='string' name='Listed_in' ordinal='10' />
+                  <column datatype='string' name='Description' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='D1-S2 — Content Mix'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#4e79a7' fontsize='12'>Content Mix</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1r5gfhp1ytv5c21bu7eph14gtn0p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r5gfhp1ytv5c21bu7eph14gtn0p'>
+            <column caption='Total Titles' datatype='integer' name='[Calculation_3080039285084160]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Show_ID])' />
+            </column>
+            <column caption='Total Show Id ' datatype='integer' name='[Calculation_3080039320260625]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Show_ID])' />
+            </column>
+            <column caption='Date added' datatype='date' name='[Date_added]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Rating]' role='dimension' type='nominal' />
+            <column caption='Release year' datatype='integer' name='[Release_year]' role='dimension' type='quantitative' />
+            <column caption='Show ID' datatype='string' name='[Show_ID]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column-instance column='[Date_added]' derivation='None' name='[none:Date_added:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Rating]' derivation='None' name='[none:Rating:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Release_year]' derivation='None' name='[none:Release_year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_3080039285084160]' derivation='User' name='[usr:Calculation_3080039285084160:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3080039320260625]' derivation='User' name='[usr:Calculation_3080039320260625:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Rating:nk]'>
+            <groupfilter function='level-members' level='[none:Rating:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Release_year:qk]' included-values='in-range'>
+            <min>1925</min>
+            <max>2021</max>
+          </filter>
+          <filter class='categorical' column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Type:nk]'>
+            <groupfilter function='level-members' level='[none:Type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Rating:nk]</column>
+            <column>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Release_year:qk]</column>
+            <column>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#e50914' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='18' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='total' value='#f9f8f7' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Type:nk]' />
+              <wedge-size column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039320260625:qk]' />
+              <text column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039285084160:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5712155103683472' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-transparency' value='198' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{73EA7565-BD7A-436D-9228-D676E8B19843}' />
+    </worksheet>
+    <worksheet name='D1-S3 — Titles Added by Year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#4e79a7' fontsize='12'>Titles Added by Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1r5gfhp1ytv5c21bu7eph14gtn0p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r5gfhp1ytv5c21bu7eph14gtn0p'>
+            <column caption='Total Titles' datatype='integer' name='[Calculation_3080039285084160]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Show_ID])' />
+            </column>
+            <column caption='Peak Year' datatype='string' name='[Calculation_3080039311380491]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='IF COUNTD([Show_ID]) =&#13;&#10;WINDOW_MAX(COUNTD([Show_ID]))&#13;&#10;THEN &quot;Peak Year&quot;&#13;&#10;ELSE &quot;Other&quot;&#13;&#10;END'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Date added' datatype='date' name='[Date_added]' role='dimension' type='ordinal' />
+            <column caption='Listed in' datatype='string' name='[Listed_in]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Rating]' role='dimension' type='nominal' />
+            <column caption='Release year' datatype='integer' name='[Release_year]' role='dimension' type='quantitative' />
+            <column caption='Show ID' datatype='string' name='[Show_ID]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column-instance column='[Listed_in]' derivation='None' name='[none:Listed_in:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Rating]' derivation='None' name='[none:Rating:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Release_year]' derivation='None' name='[none:Release_year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_3080039285084160]' derivation='User' name='[usr:Calculation_3080039285084160:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3080039311380491]' derivation='User' name='[usr:Calculation_3080039311380491:nk:1]' pivot='key' type='nominal'>
+              <table-calc ordering-field='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[yr:Date_added:ok]' ordering-type='Field' />
+            </column-instance>
+            <column-instance column='[Date_added]' derivation='Year' name='[yr:Date_added:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Listed_in:nk]'>
+            <groupfilter function='level-members' level='[none:Listed_in:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Rating:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Rating:nk]' />
+              <groupfilter function='member' level='[none:Rating:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Release_year:qk]' included-values='in-range'>
+            <min>1925</min>
+            <max>2021</max>
+          </filter>
+          <filter class='categorical' column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Type:nk]'>
+            <groupfilter function='level-members' level='[none:Type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[yr:Date_added:ok]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[yr:Date_added:ok]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[yr:Date_added:ok]' member='%null%' />
+                <groupfilter function='member' level='[yr:Date_added:ok]' member='2010' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Listed_in:nk]</column>
+            <column>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Release_year:qk]</column>
+            <column>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Rating:nk]</column>
+            <column>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Type:nk]</column>
+            <column>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[yr:Date_added:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-weight' data-class='subtotal' field='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039285084160:qk]' value='normal' />
+            <format attr='color' data-class='subtotal' field='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039285084160:qk]' value='#59a14f' />
+            <format attr='color' data-class='total' field='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039285084160:qk]' value='#75a1c7' />
+            <format attr='font-size' data-class='subtotal' field='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039285084160:qk]' value='9' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+            <format attr='border-color' data-class='subtotal' value='#000000' />
+            <format attr='height-header' value='22' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039311380491:nk:1]' />
+              <text column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039285084160:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039285084160:qk]</rows>
+        <cols>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[yr:Date_added:ok]</cols>
+      </table>
+      <simple-id uuid='{F372D126-29DF-48FB-BF8A-9212F42271AA}' />
+    </worksheet>
+    <worksheet name='D1-S4 — Monthly Addition Trend'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#4e79a7' fontname='Tableau Bold'>Monthly Addition Trend</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1r5gfhp1ytv5c21bu7eph14gtn0p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r5gfhp1ytv5c21bu7eph14gtn0p'>
+            <column caption='Total Movies' datatype='integer' name='[Calculation_3080039290695682]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(&#13;&#10;    IF [Type] = &quot;Movie&quot;&#13;&#10;    THEN [Show_ID]&#13;&#10;    END&#13;&#10;)' />
+            </column>
+            <column caption='Total TV Shows ' datatype='integer' name='[Calculation_3080039297306627]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(&#13;&#10;    IF [Type] = &quot;TV Show&quot;&#13;&#10;    THEN [Show_ID]&#13;&#10;    END&#13;&#10;)' />
+            </column>
+            <column caption='Total Show Id ' datatype='integer' name='[Calculation_3080039320260625]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Show_ID])' />
+            </column>
+            <column caption='Date added' datatype='date' name='[Date_added]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Rating]' role='dimension' type='nominal' />
+            <column caption='Show ID' datatype='string' name='[Show_ID]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column-instance column='[Date_added]' derivation='Month' name='[mn:Date_added:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date_added]' derivation='None' name='[none:Date_added:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Rating]' derivation='None' name='[none:Rating:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_3080039290695682]' derivation='User' name='[usr:Calculation_3080039290695682:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3080039297306627]' derivation='User' name='[usr:Calculation_3080039297306627:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3080039320260625]' derivation='User' name='[usr:Calculation_3080039320260625:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Date_added:qk]' included-values='all' />
+          <filter class='categorical' column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Rating:nk]'>
+            <groupfilter function='level-members' level='[none:Rating:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Type:nk]'>
+            <groupfilter function='level-members' level='[none:Type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Date_added:qk]</column>
+            <column>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Type:nk]</column>
+            <column>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Rating:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Type:nk]' />
+              <text column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039290695682:qk]' />
+              <text column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039297306627:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039320260625:qk]</rows>
+        <cols>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[mn:Date_added:ok]</cols>
+      </table>
+      <simple-id uuid='{DC6A6A43-7398-497F-9453-7D75F00E5AB3}' />
+    </worksheet>
+    <worksheet name='D1-S5 — Title Adition'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#4e79a7' fontname='Tableau Bold' fontsize='12'>TITLES ADDED</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1r5gfhp1ytv5c21bu7eph14gtn0p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r5gfhp1ytv5c21bu7eph14gtn0p'>
+            <column caption='Titles Added' datatype='integer' name='[Calculation_3080039366455321]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Show_ID])' />
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Date added' datatype='date' name='[Date_added]' role='dimension' type='ordinal' />
+            <column caption='Listed in' datatype='string' name='[Listed_in]' role='dimension' type='nominal' />
+            <column caption='Show ID' datatype='string' name='[Show_ID]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Listed_in]' derivation='None' name='[none:Listed_in:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date_added]' derivation='Year-Trunc' name='[tyr:Date_added:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3080039366455321]' derivation='User' name='[usr:Calculation_3080039366455321:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Country:nk]'>
+            <groupfilter function='level-members' level='[none:Country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Listed_in:nk]'>
+            <groupfilter function='level-members' level='[none:Listed_in:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Type:nk]'>
+            <groupfilter function='level-members' level='[none:Type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[tyr:Date_added:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Type:nk]</column>
+            <column>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Country:nk]</column>
+            <column>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Listed_in:nk]</column>
+            <column>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[tyr:Date_added:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[tyr:Date_added:qk]' value='56' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-style' value='dashed' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='3' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#4e79a7' />
+                <format attr='line-interpolation' value='step' />
+                <format attr='mark-line-pattern' value='dotted' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039366455321:qk]</rows>
+        <cols>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[tyr:Date_added:qk]</cols>
+      </table>
+      <simple-id uuid='{FFFF5403-B469-41E9-9E7F-484310069249}' />
+    </worksheet>
+    <worksheet name='D1-S6 —Titles by Release Year '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#4e79a7' fontsize='18'>Title Release </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1r5gfhp1ytv5c21bu7eph14gtn0p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r5gfhp1ytv5c21bu7eph14gtn0p'>
+            <column caption='Titles Released' datatype='integer' name='[Calculation_3080039366557722]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(&#13;&#10;    IF NOT ISNULL([Release_year])&#13;&#10;    THEN [Show_ID]&#13;&#10;    END&#13;&#10;)' />
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Date added' datatype='date' name='[Date_added]' role='dimension' type='ordinal' />
+            <column caption='Listed in' datatype='string' name='[Listed_in]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Rating]' role='dimension' type='nominal' />
+            <column caption='Release year' datatype='integer' name='[Release_year]' role='dimension' type='quantitative' />
+            <column caption='Show ID' datatype='string' name='[Show_ID]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Listed_in]' derivation='None' name='[none:Listed_in:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Rating]' derivation='None' name='[none:Rating:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Release_year]' derivation='None' name='[none:Release_year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date_added]' derivation='Year-Trunc' name='[tyr:Date_added:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3080039366557722]' derivation='User' name='[usr:Calculation_3080039366557722:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Country:nk]'>
+            <groupfilter function='level-members' level='[none:Country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Listed_in:nk]'>
+            <groupfilter function='level-members' level='[none:Listed_in:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Rating:nk]'>
+            <groupfilter function='level-members' level='[none:Rating:nk]' user:ui-enumeration='all' user:ui-exclude='true' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Type:nk]'>
+            <groupfilter function='level-members' level='[none:Type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[tyr:Date_added:qk]' included-values='in-range'>
+            <min>#2008-01-01 00:00:00#</min>
+            <max>#2021-01-01 00:00:00#</max>
+          </filter>
+          <slices>
+            <column>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Type:nk]</column>
+            <column>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[tyr:Date_added:qk]</column>
+            <column>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Country:nk]</column>
+            <column>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Listed_in:nk]</column>
+            <column>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Rating:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-line-pattern' value='dashed' />
+                <format attr='size' value='0.58171272277832031' />
+                <format attr='line-interpolation' value='step' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039366557722:qk]</rows>
+        <cols>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Release_year:qk]</cols>
+      </table>
+      <simple-id uuid='{7C3444A6-F415-48DD-A003-2A02DBF5C89B}' />
+    </worksheet>
+    <worksheet name='KPI 1 — Total Titles'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1r5gfhp1ytv5c21bu7eph14gtn0p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r5gfhp1ytv5c21bu7eph14gtn0p'>
+            <column caption='Total Titles' datatype='integer' name='[Calculation_3080039285084160]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Show_ID])' />
+            </column>
+            <column caption='Show ID' datatype='string' name='[Show_ID]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_3080039285084160]' derivation='User' name='[usr:Calculation_3080039285084160:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#1b365d' />
+            <format attr='font-size' value='18' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#72b966' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039285084160:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Benton Sans Book' fontsize='18'>Total Titles</run>
+                <run><![CDATA[
+<[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039285084160:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CB96A92A-E196-4EAD-BBA9-1E3178D2DA4B}' />
+    </worksheet>
+    <worksheet name='KPI 2 — Movies'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1r5gfhp1ytv5c21bu7eph14gtn0p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r5gfhp1ytv5c21bu7eph14gtn0p'>
+            <column caption='Total Movies' datatype='integer' name='[Calculation_3080039290695682]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(&#13;&#10;    IF [Type] = &quot;Movie&quot;&#13;&#10;    THEN [Show_ID]&#13;&#10;    END&#13;&#10;)' />
+            </column>
+            <column caption='Show ID' datatype='string' name='[Show_ID]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_3080039290695682]' derivation='User' name='[usr:Calculation_3080039290695682:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#1b365d' />
+            <format attr='font-size' value='15' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#72b966' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039290695682:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#3662f2' fontname='Benton Sans Book' fontsize='20'>Æ </run>
+                <run fontname='Benton Sans Book' fontsize='20'>Tot</run>
+                <run fontname='Benton Sans Book' fontsize='18'>al Movies</run>
+                <run><![CDATA[
+<[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039290695682:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{455A007D-CCD3-4D6B-842A-F9B2816422A9}' />
+    </worksheet>
+    <worksheet name='KPI 3 — TV Shows'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1r5gfhp1ytv5c21bu7eph14gtn0p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r5gfhp1ytv5c21bu7eph14gtn0p'>
+            <column caption='Total TV Shows ' datatype='integer' name='[Calculation_3080039297306627]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(&#13;&#10;    IF [Type] = &quot;TV Show&quot;&#13;&#10;    THEN [Show_ID]&#13;&#10;    END&#13;&#10;)' />
+            </column>
+            <column caption='Show ID' datatype='string' name='[Show_ID]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_3080039297306627]' derivation='User' name='[usr:Calculation_3080039297306627:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='color' value='#1b365d' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='18' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#72b966' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039297306627:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>Total TV Shows&#10;&lt;</run>
+                <run>[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039297306627:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A0D6CFCD-5FCD-4F54-B98F-569DF550FE7F}' />
+    </worksheet>
+    <worksheet name='KPI 4 — Movie %'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1r5gfhp1ytv5c21bu7eph14gtn0p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r5gfhp1ytv5c21bu7eph14gtn0p'>
+            <column caption='Total Titles' datatype='integer' name='[Calculation_3080039285084160]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Show_ID])' />
+            </column>
+            <column caption='Total Movies' datatype='integer' name='[Calculation_3080039290695682]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(&#13;&#10;    IF [Type] = &quot;Movie&quot;&#13;&#10;    THEN [Show_ID]&#13;&#10;    END&#13;&#10;)' />
+            </column>
+            <column caption='Movie %' datatype='real' default-format='p0.00%' name='[Calculation_3080039298531333]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_3080039290695682] / [Calculation_3080039285084160]' />
+            </column>
+            <column caption='Show ID' datatype='string' name='[Show_ID]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_3080039298531333]' derivation='User' name='[usr:Calculation_3080039298531333:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#1b365d' />
+            <format attr='font-size' value='18' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#72b966' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039298531333:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='18'>Movies in</run>
+                <run><![CDATA[
+<[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039298531333:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B158328C-9F6F-4DE3-BB48-BCE337F8C568}' />
+    </worksheet>
+    <worksheet name='KPI 5 — TV Show %'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1r5gfhp1ytv5c21bu7eph14gtn0p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r5gfhp1ytv5c21bu7eph14gtn0p'>
+            <column caption='Total Titles' datatype='integer' name='[Calculation_3080039285084160]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Show_ID])' />
+            </column>
+            <column caption='Total TV Shows ' datatype='integer' name='[Calculation_3080039297306627]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(&#13;&#10;    IF [Type] = &quot;TV Show&quot;&#13;&#10;    THEN [Show_ID]&#13;&#10;    END&#13;&#10;)' />
+            </column>
+            <column caption='TV Show %' datatype='real' default-format='p0.00%' name='[Calculation_3080039299915782]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_3080039297306627] / [Calculation_3080039285084160]' />
+            </column>
+            <column caption='Show ID' datatype='string' name='[Show_ID]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_3080039299915782]' derivation='User' name='[usr:Calculation_3080039299915782:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#1b365d' />
+            <format attr='font-size' value='18' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#72b966' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039299915782:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='18'>TV Show in </run>
+                <run><![CDATA[
+<[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039299915782:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{AEEEAB07-99FC-406F-BE7C-F04136C2C86D}' />
+    </worksheet>
+    <worksheet name='Sheet 11'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{91DFA31C-3026-425F-B5F1-6108677AC53F}' />
+    </worksheet>
+    <worksheet name='Sheet 12'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DA129E33-87D0-464C-9B39-2E599FE9E37F}' />
+    </worksheet>
+    <worksheet name='Sheet 13'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{EB6AC338-877A-4B19-9829-66D8154C283D}' />
+    </worksheet>
+    <worksheet name='Sheet 14'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1053DA6F-9B4C-4AB9-AF9F-ED07A4509D9A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Executive Catalog Overview Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='netflix_titles' name='federated.1r5gfhp1ytv5c21bu7eph14gtn0p' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1r5gfhp1ytv5c21bu7eph14gtn0p'>
+        <column caption='Date added' datatype='date' name='[Date_added]' role='dimension' type='ordinal' />
+        <column datatype='string' name='[Rating]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+        <column-instance column='[Date_added]' derivation='None' name='[none:Date_added:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Rating]' derivation='None' name='[none:Rating:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='9' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97298' id='34' param='vert' type-v2='layout-flow' w='98604' x='698' y='1351'>
+            <zone h='7094' id='35' type-v2='title' w='98604' x='698' y='1351'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='90204' id='32' param='vert' type-v2='layout-flow' w='98604' x='698' y='8445'>
+              <zone h='90204' id='10' type-v2='layout-basic' w='98604' x='698' y='8445' />
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='99493' id='3' type-v2='empty' w='95300' x='783' y='845' />
+        <zone h='16723' id='4' name='KPI 1 — Total Titles' w='18277' x='12010' y='7770' />
+        <zone h='14527' id='5' name='KPI 2 — Movies' w='17319' x='28634' y='7770' />
+        <zone h='14696' id='6' name='KPI 3 — TV Shows' w='20191' x='45170' y='6926' />
+        <zone h='14527' id='7' name='KPI 4 — Movie %' w='20801' x='63098' y='6419' />
+        <zone h='13514' id='8' name='KPI 5 — TV Show %' w='17058' x='79286' y='7770' />
+        <zone h='30574' id='36' name='D1-S3 — Titles Added by Year' w='38973' x='16516' y='27196' />
+        <zone h='13682' id='38' name='D1-S3 — Titles Added by Year' param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Type:nk]' type-v2='filter' w='13696' x='906' y='13345' />
+        <zone h='9797' id='39' name='D1-S3 — Titles Added by Year' pane-specification-id='0' param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039311380491:nk:1]' type-v2='color' w='13672' x='1270' y='38514' />
+        <zone h='33277' id='40' name='D1-S2 — Content Mix' w='36959' x='57100' y='25845' />
+        <zone h='10304' id='41' name='D1-S2 — Content Mix' param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Date_added:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='13672' x='1367' y='27027' />
+        <zone h='9797' id='43' name='D1-S2 — Content Mix' pane-specification-id='0' param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Type:nk]' type-v2='color' w='13672' x='1172' y='49493' />
+        <zone h='19257' id='44' name='D1-S4 — Monthly Addition Trend' w='79492' x='17090' y='60473' />
+        <zone h='65034' id='45' name='D1-S4 — Monthly Addition Trend' param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Rating:nk]' type-v2='filter' w='14355' x='781' y='60642' />
+        <zone h='20608' id='46' name='D1-S5 — Title Adition' w='38770' x='16992' y='81250' />
+        <zone h='28041' id='47' name='D1-S6 —Titles by Release Year ' w='39551' x='56445' y='80912' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2150' minheight='2150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='61' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97298' id='60' param='vert' type-v2='layout-flow' w='98608' x='696' y='1351'>
+                <zone h='7094' id='35' type-v2='title' w='98608' x='696' y='1351'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='117' h='14527' id='7' is-fixed='true' name='KPI 4 — Movie %' w='20801' x='63098' y='6419'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='118' h='14696' id='6' is-fixed='true' name='KPI 3 — TV Shows' w='20191' x='45170' y='6926'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='134' h='16723' id='4' is-fixed='true' name='KPI 1 — Total Titles' w='18277' x='12010' y='7770'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='116' h='14527' id='5' is-fixed='true' name='KPI 2 — Movies' w='17319' x='28634' y='7770'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='108' h='13514' id='8' is-fixed='true' name='KPI 5 — TV Show %' w='17058' x='79286' y='7770'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10304' id='41' name='D1-S2 — Content Mix' param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Date_added:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='13672' x='1367' y='27027'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='266' h='33277' id='40' is-fixed='true' name='D1-S2 — Content Mix' w='36959' x='57100' y='25845'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9797' id='43' name='D1-S2 — Content Mix' pane-specification-id='0' param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Type:nk]' type-v2='color' w='13672' x='1172' y='49493'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13682' id='38' mode='checkdropdown' name='D1-S3 — Titles Added by Year' param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Type:nk]' type-v2='filter' w='13696' x='906' y='13345'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='244' h='30574' id='36' is-fixed='true' name='D1-S3 — Titles Added by Year' w='38973' x='16516' y='27196'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9797' id='39' name='D1-S3 — Titles Added by Year' pane-specification-id='0' param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039311380491:nk:1]' type-v2='color' w='13672' x='1270' y='38514'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='65034' id='45' mode='checkdropdown' name='D1-S4 — Monthly Addition Trend' param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Rating:nk]' type-v2='filter' w='14355' x='781' y='60642'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='154' h='19257' id='44' is-fixed='true' name='D1-S4 — Monthly Addition Trend' w='79492' x='17090' y='60473'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='225' h='28041' id='47' is-fixed='true' name='D1-S6 —Titles by Release Year ' w='39551' x='56445' y='80912'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='165' h='20608' id='46' is-fixed='true' name='D1-S5 — Title Adition' w='38770' x='16992' y='81250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{62583C62-FE30-474E-970E-6D9F38844A67}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='KPI 1 — Total Titles'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A2569182-6E24-4EAE-BD02-D153A1EB0EC8}' />
+    </window>
+    <window class='worksheet' name='KPI 2 — Movies'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2CC9D170-D93D-4726-94C1-07F06BF6C026}' />
+    </window>
+    <window class='worksheet' name='KPI 3 — TV Shows'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{EFA848BE-BBB3-401C-BD20-76644F75F523}' />
+    </window>
+    <window class='worksheet' name='KPI 4 — Movie %'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{934A52DA-F12F-48C2-B515-B4386FBA6056}' />
+    </window>
+    <window class='worksheet' name='KPI 5 — TV Show %'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{00A5E7EE-6E1C-42CF-B50E-FF265C68E6C6}' />
+    </window>
+    <window class='worksheet' name='D1-S2 — Content Mix'>
+      <cards>
+        <edge name='left'>
+          <strip size='216'>
+            <card size='31' type='pages' />
+            <card size='47' type='filters' />
+            <card size='239' type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Type:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{74703B67-F069-4FD7-9505-ED96C5A4E8D0}' />
+    </window>
+    <window class='worksheet' name='D1-S3 — Titles Added by Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Listed_in:nk]' type='filter' />
+            <card param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Type:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[usr:Calculation_3080039311380491:nk:1]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0CADB19F-1D46-43A4-8CA1-3765795352D8}' />
+    </window>
+    <window class='worksheet' name='D1-S4 — Monthly Addition Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Rating:nk]' type='filter' />
+            <card param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Type:nk]' type='filter' />
+            <card param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Date_added:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BD496168-6FA8-45CD-9CC9-934DDADCC415}' />
+    </window>
+    <window class='worksheet' name='D1-S5 — Title Adition'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='166'>
+            <card param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Listed_in:nk]' type='filter' />
+            <card param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Country:nk]' type='filter' />
+            <card param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Type:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{446B73D4-5EFD-4ADB-BB65-9CB42D8C1356}' />
+    </window>
+    <window class='worksheet' name='D1-S6 —Titles by Release Year '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='166'>
+            <card param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Rating:nk]' type='filter' />
+            <card param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Listed_in:nk]' type='filter' />
+            <card param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Country:nk]' type='filter' />
+            <card param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[tyr:Date_added:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.1r5gfhp1ytv5c21bu7eph14gtn0p].[none:Type:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0F7CFA42-69BA-4B99-978E-D34FD93F9B27}' />
+    </window>
+    <window class='dashboard' name='Executive Catalog Overview Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='D1-S2 — Content Mix'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='D1-S3 — Titles Added by Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='D1-S4 — Monthly Addition Trend'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='D1-S5 — Title Adition'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='D1-S6 —Titles by Release Year '>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI 1 — Total Titles'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI 2 — Movies'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI 3 — TV Shows'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI 4 — Movie %'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='KPI 5 — TV Show %'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='35' />
+      <simple-id uuid='{B9EECABC-38B2-4C52-94F5-D3CD6A6F0C2F}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 11'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{53620BC3-42DF-4B56-A090-357F9057E68A}' />
+    </window>
+    <window class='worksheet' name='Sheet 12'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1F674033-D230-462B-B64D-3F26F4947C79}' />
+    </window>
+    <window class='worksheet' name='Sheet 13'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DD1B9F6A-0C7E-4CBA-8D98-CA502102CE1E}' />
+    </window>
+    <window class='worksheet' name='Sheet 14'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E7C3B69A-CF13-47AE-949F-EABE7EBD498B}' />
+    </window>
+  </windows>
+</workbook>
